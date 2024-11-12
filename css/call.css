@@ -1,0 +1,48 @@
+.win-call{
+    background-color: #757575;         
+    position: fixed;    
+    border-radius: 2em;    
+    width: 300px;
+    height: auto;
+    padding-bottom: 1em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);    
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2.237px 3.316px 8px 0px rgba(0, 0, 0, 0.65);    
+    z-index: 1;         
+    display: none;
+}
+
+/* .win-call:target{
+    display: block;        
+} */
+
+#btn-call:target{
+    display: block;        
+}
+
+.win-call-element{
+    margin: 0.5em;
+    font-family: 'Ubuntu';    
+}
+
+.bg-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;    
+    opacity: .3;    
+    transition-timing-function: cubic-bezier(0,0,0.2,1);
+    transition-duration: 1s;
+    z-index: 1;
+    display: none;
+}
+
+.bg-shadow:target{
+    display: block;
+}

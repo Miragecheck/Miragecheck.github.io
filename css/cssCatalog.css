@@ -5,12 +5,13 @@
 }
 
 .box {
-  /*border: 5px solid darkblue;*/
+ /* border: 5px solid darkblue;*/
 width: 70%;
 height: auto;
 display: inline-block;
-margin: 0 auto;
+margin-left: 15%;
 margin-top: 0.5%;
+
 }
 
  table, th, td{

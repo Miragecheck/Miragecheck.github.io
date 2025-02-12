@@ -19,12 +19,13 @@
 		<link rel="stylesheet" href="./css/widget-nav-menu.min.css">	<!--CSS отвечает за пункты заголовка-->
 		<link rel="stylesheet" href="./css/widget-theme-elements.min.css">	<!--Поиск-->	
 		<link rel="stylesheet" href="./css/widget-loop-builder.min.css"><!--Категории-->
+		<link rel="stylesheet" href="./css/modal.css">
 		<link rel="icon" type="image/png" sizes="32x32" href="image/Icon_32x32.png">
 	</head>
 
 
    <!--Начало заголовка -->
-   <body class="elementor-kit-12">  
+   <body class="elementor-kit-12"> 
 	<div>
 		
 	<div class="elementor-14">
@@ -53,10 +54,37 @@
 	<!--Заказать звонок-->
 	<div class="elementor-element elementor-element-f96a601 e-con-full e-con">
 		<div class="elementor-element elementor-element-fa5e397 elementor-widget-button">
-					<button class="elementor-button elementor-size-xs">ЗАКАЗАТЬ ЗВОНОК</button>						
+					<label class="btn elementor-button elementor-size-xs" for="modal-1">ЗАКАЗАТЬ ЗВОНОК</label>		
 		</div>
 	</div>	
 	<!--Заказать звонок-->
+					<!-- Модальное окно -->
+					<div class="modal">
+						<input class="modal-open" id="modal-1" type="checkbox" hidden>
+						<div class="modal-wrap" aria-hidden="true" role="dialog">
+						  <label class="modal-overlay" for="modal-1"></label>
+						  <div class="modal-dialog">
+							<div class="modal-header">
+							  <h2>Заявка на покупку</h2>
+							  <label class="btn-close" for="modal-1" aria-hidden="true">X</label>
+							</div>
+							<div class="modal-body">
+								 <p class="text-name"> Ваше имя:<br/> 
+								 		<input class="input-text"></input><br/>
+								 Телефон<sup>*</sup>:<br/> 
+								 		<input class="input-text" ></input><br/>
+								 Комментарий к заявке:<br/> 
+								 		<textarea class="input-textarea"></textarea></p>
+							</div>
+							<div class="modal-footer">
+							  <label class="btn btn-primary" for="modal-1">Отправить заявку менеджеру</label>
+							</div>
+						  </div>
+						</div>
+					  </div>
+
+
+
 						</div>
 					</div>
 	<!--Начало верхних пунктов(Лого, телефоны, почта корзина)-->			
@@ -291,7 +319,6 @@
 	</div>
 </div>
 <!--Пятый блок конец -->
-
 			</div>
 		</div>
 	</div>
@@ -299,44 +326,10 @@
 		
 			</div>
 		</div><!--Конец основного блока-->
+		
 	</div>
-
-
-
 <!--JavaScript block-->
 <script type="text/javascript" src="./js/busket.js"></script>
-<script src="./js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
-<script src="./js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
-<script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0432 Facebook","shareOnTwitter":"\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f \u0432 Twitter","pinIt":"\u0417\u0430\u043f\u0438\u043d\u0438\u0442\u044c","download":"\u0421\u043a\u0430\u0447\u0430\u0442\u044c","downloadImage":"\u0421\u043a\u0430\u0447\u0430\u0442\u044c \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435","fullscreen":"\u0412\u043e \u0432\u0435\u0441\u044c \u044d\u043a\u0440\u0430\u043d","zoom":"\u0423\u0432\u0435\u043b\u0438\u0447\u0435\u043d\u0438\u0435","share":"\u041f\u043e\u0434\u0435\u043b\u0438\u0442\u044c\u0441\u044f","playVideo":"\u041f\u0440\u043e\u0438\u0433\u0440\u0430\u0442\u044c \u0432\u0438\u0434\u0435\u043e","previous":"\u041d\u0430\u0437\u0430\u0434","next":"\u0414\u0430\u043b\u0435\u0435","close":"\u0417\u0430\u043a\u0440\u044b\u0442\u044c","a11yCarouselWrapperAriaLabel":"\u041a\u0430\u0440\u0443\u0441\u0435\u043b\u044c | \u0413\u043e\u0440\u0438\u0437\u043e\u043d\u0442\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u0440\u043e\u043a\u0440\u0443\u0442\u043a\u0430: \u0441\u0442\u0440\u0435\u043b\u043a\u0430 \u0432\u043b\u0435\u0432\u043e \u0438 \u0432\u043f\u0440\u0430\u0432\u043e","a11yCarouselPrevSlideMessage":"\u041f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0438\u0439 \u0441\u043b\u0430\u0439\u0434","a11yCarouselNextSlideMessage":"\u0421\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0441\u043b\u0430\u0439\u0434","a11yCarouselFirstSlideMessage":"\u042d\u0442\u043e \u043f\u0435\u0440\u0432\u044b\u0439 \u0441\u043b\u0430\u0439\u0434","a11yCarouselLastSlideMessage":"\u042d\u0442\u043e \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0441\u043b\u0430\u0439\u0434","a11yCarouselPaginationBulletMessage":"\u041f\u0435\u0440\u0435\u0439\u0442\u0438 \u043a \u0441\u043b\u0430\u0439\u0434\u0443"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 - \u043a\u043d\u0438\u0436\u043d\u0430\u044f \u043e\u0440\u0438\u0435\u043d\u0442\u0430\u0446\u0438\u044f","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 - \u0430\u043b\u044c\u0431\u043e\u043c\u043d\u0430\u044f \u043e\u0440\u0438\u0435\u043d\u0442\u0430\u0446\u0438\u044f","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"\u041f\u043b\u0430\u043d\u0448\u0435\u0442 - \u043a\u043d\u0438\u0436\u043d\u0430\u044f \u043e\u0440\u0438\u0435\u043d\u0442\u0430\u0446\u0438\u044f","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"\u041f\u043b\u0430\u043d\u0448\u0435\u0442 - \u0430\u043b\u044c\u0431\u043e\u043c\u043d\u0430\u044f \u043e\u0440\u0438\u0435\u043d\u0442\u0430\u0446\u0438\u044f","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"\u041d\u043e\u0443\u0442\u0431\u0443\u043a","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"\u0428\u0438\u0440\u043e\u043a\u043e\u0444\u043e\u0440\u043c\u0430\u0442\u043d\u044b\u0435","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.21.3","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"container_grid":true,"home_screen":true,"ai-layout":true,"form-submissions":true},"urls":{"assets":"https:\/\/cmtpr.ru\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[],"dynamicooo":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"woocommerce_notices_elements":[]},"post":{"id":10,"title":"%D0%A1%D0%9C%D0%A2%20%E2%80%93%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B%20%D0%B8%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8","excerpt":"","featuredImage":false}};
-</script>
-<script src="./js/frontend.min(3).js" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
-<script src="./js/swiper.min.js" id="wp-content"></script>
-<script async="" src="./js/tag.js"></script>
-<script type="text/template" id="tmpl-variation-template">
-	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
-	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
-	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
-</script>
-<script src="./js/jquery.min.js" id="jquery-core-js"></script>
-<script src="./js/frontend.min.js" id="wp-yandex-metrika_frontend-js"></script>
-<script src="./js/extension.min.js" id="pafe-extension-js"></script>
-<script src="./js/woocommerce-sales-funnels.min.js" id="pafe-woocommerce-sales-funnels-script-js"></script>
-<script src="./js/jquery.blockUI.min.js" id="jquery-blockui-js" data-wp-strategy="defer"></script>
-<script id="wc-add-to-cart-js-extra">
-var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 \u043a\u043e\u0440\u0437\u0438\u043d\u044b","cart_url":"https:\/\/cmtpr.ru\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
-</script>
-<script src="./js/add-to-cart.min.js" id="wc-add-to-cart-js" defer="" data-wp-strategy="defer"></script>
-<script src="./js/js.cookie.min.js" id="js-cookie-js" data-wp-strategy="defer"></script>
-<script id="woocommerce-js-extra">
-var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
-</script>
-<script src="./js/woocommerce.min.js" id="woocommerce-js" defer="" data-wp-strategy="defer"></script>
-<script src="./js/underscore.min.js" id="underscore-js"></script>
-<script id="wp-util-js-extra">
-var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
-</script>
-<script src="./js/wp-util.min.js" id="wp-util-js"></script>
 <script src="./js/Avto.js"></script>
 <!--JavaScript block End-->
 </body></html>

@@ -25,6 +25,10 @@ margin-top: 0.5%;
 .td-center{
    text-align: center;
 }
+
+.td-button{
+   align-content: normal;
+}
 .td-img{
    text-align: center;
    width: 30%;
@@ -50,14 +54,36 @@ hr{
 .button-style{
    background: linear-gradient(45deg, #f4e300, #fff236);
    /*background: linear-gradient(45deg, #2795c8, #757575);*/
-   width: 30em;
+   width: 25em;
    text-align: center;
 }
  .button-style:hover{
    color: #ffffff;
-   background: linear-gradient(45deg, #757575, #aaaaaa);
+   background: linear-gradient(45deg, #2795c8, #c5c5c5);
  }
- 
+
+ .button-style:focus{
+   background: linear-gradient(45deg, #2795c8, #c5c5c5);
+ }
+
 .form-style{
    text-align: left;
+}
+
+footer{
+   background-color: rgb(53, 53, 53);
+   color: #ffffff;
+   width: 100%;
+   height: auto;
+   display: inline-block;
+   margin-top: 0.2%;
+
+}
+.footer-text{
+   width: 50%;
+   font-size: 12px;
+   height: auto;
+   display: inline-block;
+   margin-left: 15%;
+   margin-bottom: 0.1%;
 }

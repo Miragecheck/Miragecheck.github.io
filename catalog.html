@@ -19,12 +19,17 @@
 <link rel="stylesheet" href="./css/widget-loop-builder.min.css"><!--Категории-->
 <link rel="icon" type="image/png" sizes="32x32" href="image/Icon_32x32.png">
 <link rel="stylesheet" href="./css/cssCatalog.css"> <!-- Класс основного блока-->
-		</head>
+<link rel="stylesheet" href="./css/footer.css"> <!-- Футер CSS-->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/modal.css">
+
+</head>
    <!--Начало заголовка -->
    <body class="elementor-kit-12">  
 	<div>
 	<div class="elementor-14">
-		<div class="elementor-element elementor-element-805a5f8 e-con">
+        <div class="elementor-element elementor-element-805a5f8 e-con">
 			<div class="e-con-inner">
 					<!--Поиск-->
 							<div class="elementor-element e-con">
@@ -49,10 +54,39 @@
 	<!--Заказать звонок-->
 	<div class="elementor-element elementor-element-f96a601 e-con-full e-con">
 		<div class="elementor-element elementor-element-fa5e397 elementor-widget-button">
-					<button class="elementor-button elementor-size-xs">ЗАКАЗАТЬ ЗВОНОК</button>						
+					<label class="btn elementor-button elementor-size-xs" for="modal-1">ЗАКАЗАТЬ ЗВОНОК</label>		
 		</div>
 	</div>	
+
 	<!--Заказать звонок-->
+	<!-- Модальное окно -->
+					<div class="modal">
+						<input class="modal-open" id="modal-1" type="checkbox" hidden>
+						<div class="modal-wrap" aria-hidden="true" role="dialog">
+						  <label class="modal-overlay" for="modal-1"></label>
+						  <div class="modal-dialog">
+							<div class="modal-header">
+							  <h2>ЗАКАЗАТЬ ЗВОНОК</h2>
+							  <label class="btn-close" for="modal-1" aria-hidden="true">X</label>
+							</div>
+							<div class="container form">
+								  <div class="form__input-box">
+									<input class="form__input-inp" type="text" id="name" name="name" placeholder="Имя" autocomplete="off">
+								  </div>
+								  <div class="form__input-box">
+									<input class="form__input-inp" type="tel" id="tel" name="tel" placeholder="+7(___) ___-__-__" autocomplete="off">
+								  </div>
+								  <div class="form__input-box">
+									<textarea class="form__input-inp" name="msg" id="msg" placeholder="Сообщение"></textarea>
+								  </div>
+								  <button id="form" class="form__btn" type="submit">Отправить заявку менеджеру</button>
+							  </div>
+						  </div>
+						</div>
+					  </div>
+	<!-- Модальное окно -->
+
+
 						</div>
 					</div>
 	<!--Начало верхних пунктов(Лого, телефоны, почта корзина)-->			
@@ -307,7 +341,7 @@
                  </ul> 
         </tr>
         <tr>
-            <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+            <td class="td-center"><h3> Цена: 1625 рублей</h3><hr class="hr-horizontal-gradient"></td>
             <td class="td-center"><form class="form-style" action="PDF/KINGTOPWD.pdf" target="_blank"> 
                 <button class="button-style" style="float: left;">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form>
                 <form class="form-style" style="float: right;" action="Sertificat/.pdf" target="_blank"> 
@@ -317,58 +351,6 @@
     </table>    
     </div>
 <!-- KINGTOP WD -->
- <!--
-<span id="king-siller"><hr></span>
- KING SILLER
-<div class="box"> 
-    <table>
-    
-        <tr>
-            <td class="td-center"><h3>KING SILLER</h3><hr class="hr-horizontal-gradient" ></td>
-            <td class="td-center"><h3>Описание</h3><hr class="hr-horizontal-gradient"></td>
-        </tr>
-        <tr>
-                <td class="td-img" rowspan="3"><img class="catalog-img" src="/image/ProductKingFloor/kingSiller.png"></td>
-                <td>KING SILLER - это раствор прозрачного лака, который при нанесении уплотняет поверхность бетона и образует тонкую, износостойкую пленку, которая эффективно защищает свежий бетон от потери влаги. <br/>
-                    Идеально подходит для защиты бетона при устройстве упрочненного пола с помощью сухих смесей KINGTOP Corund, KINGTOP PremiumSQ и KINGTOP CorundPremium.<br/>
-                  <ul> 
-                <li> Снижает потерю влажности свежего бетона на 90,0%.</li>  
-                <li> Препятствует образованию волостных трещин при усадке в течение начальной фазы созревания бетона.</li>
-                <li> Увеличивает сопротивление поверхности к проникновению масел и некоторых нефтепродуктов.</li>
-                <li> Препятствует выделению пыли.</li>
-                <li> Повышает устойчивость к истиранию.</li>
-                <li> Отличается быстрым и простым применением.</li> </ul></td>
-        </tr>
-        <tr>
-            <td class="td-center"><h3>Характеристики</h3><hr class="hr-horizontal-gradient"></td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <img src="/image/IconCheck32x32.png"> <b>Толщина слоя: </b>10-30 мм;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Срок набора прочности:</b> 28 суток;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Прочность при сжатии через 24 часа твердения:</b> >30 МПа;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Прочность при сжатии через 28 суток твердения:</b> >80 МПа;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Прочность при растяжении на изгиб через 28 суток твердения:</b> >10 МПа;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Прочность сцепления с основанием:</b> >2 МПа;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Расход материала:</b> >20 кг/10 мм/м<sup>2</sup>;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Расход воды:</b> 0.140-0.144 л/кг (3.5-3.6 л/25 кг.);<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Максимальный диаметр частиц сухой смеси:</b> 3 мм;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Износостойкость:</b><br/>
-                    <ul>
-                        <li> <b>метод BCA класс (EN 13892-4): </b>AR 0.5 (глубина колеи максимум 50 мкм); </li>
-                        <li> <b>метод Bohme – EN 13892-3:2004:</b> А3 (максимум 3.0 см<sup>3</sup> / 50 см<sup>2</sup>);</li>
-                    </ul>
-                 </ul> 
-        </tr>
-        <tr>
-            <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
-             <td class="td-center"><form class="form-style" action="PDF/King-siller.pdf" target="_blank"> 
-                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
-        </tr>
-    </table>    
-    </div>
- KING SILLER -->
  <span id="king-siller2E"><hr></span>
 <!-- KING SILLER 2 Е -->
 <div class="box"> 
@@ -415,7 +397,7 @@
                  </ul> 
         </tr>
         <tr>
-            <td class="td-center"><h3> Цена: 7800 рублей</h3><hr class="hr-horizontal-gradient"></td>
+            <td class="td-center"><h3> Цена: 9000 рублей</h3><hr class="hr-horizontal-gradient"></td>
             <td class="td-center"><form class="form-style" action="PDF/KING_SILLER_2E.pdf" target="_blank"> 
                 <button class="button-style" style="float: left;">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form>
                 <form class="form-style" style="float: right;" action="Sertificat/KingSiller2E_HyBrid.pdf" target="_blank"> 
@@ -427,58 +409,6 @@
     </table>    
     </div>
 <!-- KING SILLER 2 Е -->
-<!-- 
-<span id="king-floor-hybrid"><hr></span>
-<b><h2 style="text-align: center;">УПРОЧНЯЮЩИЙ ЛАК ДЛЯ БЕТОНА KING FLOOR HYBRID</h2></b>
-KING FLOOR HYBRID 
-
-<div class="box"> 
-    <table>
-    
-        <tr>
-            <td class="td-center"><h3>KING FLOOR HYBRID</h3><hr class="hr-horizontal-gradient" ></td>
-            <td class="td-center"><h3>Описание</h3><hr class="hr-horizontal-gradient"></td>
-        </tr>
-        <tr>
-                <td class="td-img" rowspan="3"><img class="catalog-img" src="/image/ProductKingFloor/kingtopHybrid.png"></td>
-                <td>Однокомпонентное тонкослойное кремнийорганическое покрытие, основанное на технологии α-силанов, отверждаемое влагой воздуха, которое применяется как защитное
-                    покрытие для бетонных полов, полированных или неполированных, тротуарной плитки, клинкера, кирпичей и натурального камня, 
-                    с целью придания материалам грязестойкости, придания глянца, в качестве интерьерного покрытия для паркетных полов и мебели</td>
-        </tr>
-        <tr>
-            <td class="td-center"><h3>Характеристики</h3><hr class="hr-horizontal-gradient"></td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <img src="/image/IconCheck32x32.png"><b>Легок в нанесении;<br/>
-                    <img src="/image/IconCheck32x32.png"> Без запаха / Без растворителей;<br/>
-                    <img src="/image/IconCheck32x32.png"> Негорючий;<br/>
-                    <img src="/image/IconCheck32x32.png"> Ремонтопригодность (заделка царапин);<br/>
-                    <img src="/image/IconCheck32x32.png"> Отличная грязестойкость;<br/>
-                    <img src="/image/IconCheck32x32.png"> Высокая твердость, хорошая стойкость к царапанию и истиранию;<br/>
-                    <img src="/image/IconCheck32x32.png"> Поддающийся полировке;<br/>
-                    <img src="/image/IconCheck32x32.png"> Нескользкий;<br/>
-                    <img src="/image/IconCheck32x32.png"> Легко моющийся;<br/>
-                    <img src="/image/IconCheck32x32.png"> Быстро твердеющий (можно ходитьчерез 24 ч.);<br/>
-                    <img src="/image/IconCheck32x32.png"> Выдерживает каплепадение расплавленного металла (сварка, искры от резки металла);<br/>
-                    <img src="/image/IconCheck32x32.png"> Стойкость к разливам ГСМ;<br/>
-                    <img src="/image/IconCheck32x32.png"> Возможность нанесения на влажное основание;<br/>
-                    <img src="/image/IconCheck32x32.png"> 98% сухого остатка;<br/>
-                    <img src="/image/IconCheck32x32.png"> Снижает истираемость бетона в 4 раза;</b><br/>
-                    
-                    
-                 </ul> 
-        </tr>
-        <tr>
-            <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
-             <td class="td-center"><form class="form-style" action="PDF/KING_FLOOR_HYBRID.pdf" target="_blank"> 
-                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
-        </tr>
-    </table>    
-    </div>
-    
-KING FLOOR HYBRID -->
 <hr>
 <div class="box"><span id="king-rs-400"><b> <h2 style="text-align: center;">РЕМОНТНЫЕ ТИКСОТРОПНЫЕ СМЕСИ</h2></b></div></span>
 <!-- KING RS 400 -->
@@ -721,7 +651,7 @@ KING FLOOR HYBRID -->
                  </ul> 
         </tr>
         <tr>
-            <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+            <td class="td-center"><h3> Цена: 1625 рублей</h3><hr class="hr-horizontal-gradient"></td>
             <td class="td-center"><form class="form-style" action="PDF/KINGRS600Thixotropic.pdf" target="_blank"> 
                 <button class="button-style" style="float: left;">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form>
                 <form class="form-style" style="float: right;" action="Sertificat/.pdf" target="_blank"> 
@@ -730,61 +660,6 @@ KING FLOOR HYBRID -->
     </table>    
     </div>
 <!-- KING RS-600-Thixotropic -->
-
-<span id="king-rst"><hr></span>
-<!-- KING RST -->
-<div class="box"> 
-    <table>
-    
-        <tr>
-            <td class="td-center"><h3>KING RST</h3><hr class="hr-horizontal-gradient" ></td>
-            <td class="td-center"><h3>Описание</h3><hr class="hr-horizontal-gradient"></td>
-        </tr>
-        <tr>
-                <td class="td-img" rowspan="3"><img class="catalog-img" src="/image/ProductKingFloor/kingRST.png"></td>
-                <td>Готовый к применению материал в виде сухой смеси, созданный на основе высокопрочного цемента, фракционированного песка 
-                    и специальной добавки, содержит полимерную фибру.<br/>
-                    <b>Область применения: </b>
-                    <ul> 
-                    <li> ремонт защитного слоя бетона, поврежденных участков железобетонных конструкций
-                     <li> (углов колонн, балок, кромок балконов, перемычек), разрушенных в результате коррозии арматуры;</li>
-                    <li> ремонт бетонных поверхностей каналов и гидротехнических сооружений без устройства опалубки;</li>
-                    <li> исправление дефектов на бетонной поверхности (раковины), возникших из-за нарушения технологии производства работ;</li>
-                    <li> устранение дефектов, образовавшихся после демонтажа опалубки (сколы, отверстия от распорок опалубки);</li>
-                    <li> заполнение жёстких швов.</li></ul></td>
-        </tr>
-        <tr>
-            <td class="td-center"><h3>Характеристики</h3><hr class="hr-horizontal-gradient"></td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <img src="/image/IconCheck32x32.png"> <b>Цвет: </b>серый;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Прочность на сжатие (через 28 суток):</b> более 40 МПа;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Прочность на отрыв от бетонной поверхности:</b> 2 МПа;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Прочность на изгиб:</b> более 7.0 МПа;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Морозостойкость:</b> F 300;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Водонепроницаемость:</b> W 16;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Вяжущее:</b> портландцемент 52.5Н;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Заполнитель:</b> фракционированный песок;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Фракция заполнителя:</b> до 2.5 мм;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Максимальная толщина за один проход:</b> 35 мм;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Минимальная толщина за один проход:</b> 1 мм<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Расход воды для приготовления:</b> 120-140 мл. (3.0 - 3.5 л. на мешок) литров на 1 кг смеси;<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Время использования готового раствора(сохранение первоначальной удобоукладываемости смеси):</b> 40 мин<br/>
-                    <img src="/image/IconCheck32x32.png"> <b>Температура рабочей поверхности:</b> от +5 &degС;<br/>
-                 </ul> 
-        </tr>
-        <tr>
-            <td class="td-center"><h3> Цена: 1150 рублей</h3><hr class="hr-horizontal-gradient"></td>
-            <td class="td-center"><form class="form-style" action="PDF/KINGRST.pdf" target="_blank"> 
-                <button class="button-style" style="float: left;">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form>
-                <form class="form-style" style="float: right;" action="Sertificat/KingFloor_KingRS.pdf" target="_blank"> 
-                    <button class="button-style">ДОКУМЕНТЫ И СЕРТИФИКАТЫ</button></form></td>
-        </tr>
-    </table> 
-</div>
-<!-- KING RST -->
 
 <span id="king-rst400"><hr></span>
 <!-- KING RST400 -->
@@ -831,7 +706,7 @@ KING FLOOR HYBRID -->
                  </ul> 
         </tr>
         <tr>
-            <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+            <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
             <td class="td-center"><form class="form-style" action="PDF/KINGRST400.pdf" target="_blank"> 
                 <button class="button-style" style="float: left;">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form>
                 <form class="form-style" style="float: right;" action="Sertificat/.pdf" target="_blank"> 
@@ -947,7 +822,7 @@ KING FLOOR HYBRID -->
                  </ul> 
         </tr>
         <tr>
-            <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+            <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
             <td class="td-center"><form class="form-style" action="PDF/KINGRSHifloor.pdf" target="_blank"> 
                 <button class="button-style" style="float: left;">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form>
                 <form class="form-style" style="float: right;" action="Sertificat/.pdf" target="_blank"> 
@@ -957,51 +832,7 @@ KING FLOOR HYBRID -->
 </div>
 <!-- KING RS HFiLOOR -->
 <hr>
-
 <div class="box"><span id="king-floor"> <h2 style="text-align: center;"><b>НАЛИВНЫЕ ПРОМЫШЛЕННЫЕ САМОВЫРАВНИВАЮЩИЕСЯ ПОЛЫ «KING FLOOR»</b></h2></span></div>
-<!-- KING FLOOR -->
-<div class="box"> 
-    <table>
-    
-        <tr>
-            <td class="td-center"><h3>KING FLOOR</h3><hr class="hr-horizontal-gradient" ></td>
-            <td class="td-center"><h3>Описание</h3><hr class="hr-horizontal-gradient"></td>
-        </tr>
-        <tr>
-                <td class="td-img" rowspan="3"><img class="catalog-img" src="/image/ProductKingFloor/King-Floor.png"></td>
-                <td>Самовыравнивающееся промышленное покрытие на неорганическом связующем <br/>
-                    с добавкой упрочняющих полимеров для промышленных полов с высокой и средней механической нагрузкой.<br/>
-                    Для восстановления существующего бетона. <br/>
-                    Для устройства нового напольного покрытия. <br/>
-                    Для выравнивания полов в жилых, общественных, офисных, складских помещениях. <br/>
-                    Применяется в качестве основания под любые напольные покрытия.</td>
-        </tr>
-        <tr>
-            <td class="td-center"><h3></h3><hr class="hr-horizontal-gradient"></td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <img src="/image/IconCheck32x32.png"> <b>Идеально ровный пол под любые, даже тонкие напольные покрытия </b> 
-                                                            <ul>Этот материал имеет высокую текучесть и образует гладкую прочную поверхность без усадки и трещин</ul>
-                    <img src="/image/IconCheck32x32.png"> <b>Быстросохнущий - можно укладывать следующее следующее покрытие через 1-3 суток</b> 
-                                                            <ul>Использование упрочняющих полимеров позволяет увеличить прочность и сократить время высыхания</ul>
-                    <img src="/image/IconCheck32x32.png"> <b>Удобный в работе</b>  
-                                                            <ul>Хорошо растекается, не требует профессиональных навыков при использовании</ul>
-                    <img src="/image/IconCheck32x32.png"> <b>Выдерживает повышенные механические и истирающие нагрузки:</b>
-                                                            <ul>Качество и характеристики продукции подтверждены испытаниями по ГОСТ 31358-2007, ГОСТ 31356-2007;</ul>
-                 </ul> 
-        </tr>
-        <tr>
-            <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
-            <td class="td-center"><form class="form-style" action="PDF/KING_FLOOR.pdf" target="_blank"> 
-                <button class="button-style" style="float: left;">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form>
-                <form class="form-style" style="float: right;" action="Sertificat/KingFloor_Serf_Decl.pdf" target="_blank"> 
-                    <button class="button-style">ДОКУМЕНТЫ И СЕРТИФИКАТЫ (Отсуствует)</button></form></td>
-        </tr>
-    </table>    
-    </div>
-<!-- KING FLOOR -->
 <span id="king-floor-30"><hr></span>
  <!-- KING FLOOR 30 -->
 <div class="box"> 
@@ -1257,7 +1088,7 @@ KING FLOOR HYBRID -->
                  </ul> 
         </tr>
         <tr>
-            <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+            <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
             <td class="td-center"><form class="form-style" action="PDF/МОНОХИМ 1010 П.PDF" target="_blank"> 
                 <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
         </tr>
@@ -1317,7 +1148,7 @@ KING FLOOR HYBRID -->
                 </ul> 
        </tr>
        <tr>
-           <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+           <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
            <td class="td-center"><form class="form-style" action="PDF/МОНОХИМ 1010.pdf" target="_blank"> 
                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
        </tr>
@@ -1374,7 +1205,7 @@ KING FLOOR HYBRID -->
                 </ul> 
        </tr>
        <tr>
-           <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+           <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
            <td class="td-center"><form class="form-style" action="PDF/МОНОХИМ 1011.pdf" target="_blank"> 
                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
        </tr>
@@ -1438,7 +1269,7 @@ KING FLOOR HYBRID -->
                 </ul> 
        </tr>
        <tr>
-           <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+           <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
            <td class="td-center"><form class="form-style" action="PDF/МОНОХИМ 1121.pdf" target="_blank"> 
                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
        </tr>
@@ -1483,7 +1314,7 @@ KING FLOOR HYBRID -->
                 </ul> 
        </tr>
        <tr>
-           <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+           <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
            <td class="td-center"><form class="form-style" action="PDF/МОНОХИМ 1401.pdf" target="_blank"> 
                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
        </tr>
@@ -1528,7 +1359,7 @@ KING FLOOR HYBRID -->
                 </ul> 
        </tr>
        <tr>
-           <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+           <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
            <td class="td-center"><form class="form-style" action="PDF/МОНОХИМ 1402.pdf" target="_blank"> 
                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
        </tr>
@@ -1576,7 +1407,7 @@ KING FLOOR HYBRID -->
                 </ul> 
        </tr>
        <tr>
-           <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+           <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
            <td class="td-center"><form class="form-style" action="PDF/МОНОХИМ 1403.pdf" target="_blank"> 
                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
        </tr>
@@ -1620,7 +1451,7 @@ KING FLOOR HYBRID -->
                 </ul> 
        </tr>
        <tr>
-           <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+           <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
            <td class="td-center"><form class="form-style" action="PDF/МОНОХИМ 1404.pdf" target="_blank"> 
                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
        </tr>
@@ -1679,7 +1510,7 @@ KING FLOOR HYBRID -->
                 </ul> 
        </tr>
        <tr>
-           <td class="td-center"><h3> Цена: 5000 рублей</h3><hr class="hr-horizontal-gradient"></td>
+           <td class="td-center"><h3> Цена: по запросу</h3><hr class="hr-horizontal-gradient"></td>
            <td class="td-center"><form class="form-style" action="PDF/МОНОХИМ 3211.pdf" target="_blank"> 
                <button class="button-style">ПОДРОБНАЯ ИНФОРМАЦИЯ</button></form></td>
        </tr>
@@ -1687,32 +1518,55 @@ KING FLOOR HYBRID -->
    </div>
 <!-- МОНОХИМ 3211 -->
 
-<!-- <footer>
-    <table class="footer-text">
+<footer>
+    <table class="footer-table">
+        <tr> <div class="footer-div">ООО «ПРАЙДЕК» &copy; 2025. Все права защищены.</div></tr>
         <tr>
-            <td>ООО «ПРАЙДЕК» &copy; 2025. Все права защищены.</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="footer-text">
-                    <a href="catalog.html#MONOXIM1010P"> МОНОХИМ 1010 П </a><br/>
-                    <a href="catalog.html#MONOXIM1010"> МОНОХИМ 1010 </a><br/>
-                    <a href="catalog.html#MOHOXIM1011"> МОНОХИМ 1011 </a><br/>
-                    <a href="catalog.html#MOHOXIM1121">	МОНОХИМ 1121 </a><br/>
-                    <a href="catalog.html#MOHOXIM1401">	МОНОХИМ 1401 </a><br/>
-                    <a href="catalog.html#MOHOXIM1402"> МОНОХИМ 1402 </a><br/>
-                    <a href="catalog.html#MOHOXIM1403">	МОНОХИМ 1403 </a><br/>
-                    <a href="catalog.html#MOHOXIM1404">	МОНОХИМ 1404 </a><br/>
-                    <a href="catalog.html#MOHOXIM3211">	МОНОХИМ 3211 </a><br/>
-                </div>
+            <td class="footer-td footer-text">
+                <a href="catalog.html#king-floor-30">KING FLOOR 30</a><br/>
+                <a href="catalog.html#king-floor-40">KING FLOOR 40</a><br/>
+                <a href="catalog.html#king-floor-hard">KING FLOOR HARD</a>
+            </td>
+            <td class="footer-td footer-text">
+                <a href="catalog.html#king-rs-400">KING RS 400</a><br/>
+                <a href="catalog.html#king-rs-500">KING RS 500</a><br/>
+                <a href="catalog.html#king-rs-600">KING RS 600</a><br/>
+                <a href="catalog.html#king-rs-hfloor">KING RS HFLOOR</a><br/>
+                <a href="catalog.html#king-rs-hfiloor">KING RS HFiLOOR</a><br/>
+                <a href="catalog.html#king-rst400">KING RST400</a><br/>
+                <a href="catalog.html#king-rs-600-thixotropic">KING RS600 THIXOTROPIC</a>
+            </td>
+    
+            <td class="footer-td footer-text">
+                <a href="catalog.html#kingtop-corund"> KINGTOP CORUND</a><br/>
+                <a href="catalog.html#kingtop-corund-premium">KINGTOP CORUND PREMIUM</a><br/>
+                <a href="catalog.html#kingtop-premium-sq">KINGTOP PREMIUM SQ</a><br/>
+                <a href="catalog.html#kingtop-wd">KINGTOP WD</a><br/>
+                <a href="catalog.html#king-siller2E">KING SILLER 2 E</a><br/>
+            </td>
+    
+            <td class="footer-td footer-text"><a href="catalog.html#king-fix-proff"> KING FIX PROFF</a><br/></td>
+    
+            <td class="footer-td footer-text">
+                <a href="catalog.html#MONOXIM1010P"> МОНОХИМ 1010 П </a><br/>
+                <a href="catalog.html#MONOXIM1010"> МОНОХИМ 1010 </a><br/>
+                <a href="catalog.html#MOHOXIM1011"> МОНОХИМ 1011 </a><br/>
+                <a href="catalog.html#MOHOXIM1121">	МОНОХИМ 1121 </a><br/>
+                <a href="catalog.html#MOHOXIM1401">	МОНОХИМ 1401 </a><br/>
+                <a href="catalog.html#MOHOXIM1402"> МОНОХИМ 1402 </a><br/>
+                <a href="catalog.html#MOHOXIM1403">	МОНОХИМ 1403 </a><br/>
+                <a href="catalog.html#MOHOXIM1404">	МОНОХИМ 1404 </a><br/>
+                <a href="catalog.html#MOHOXIM3211">	МОНОХИМ 3211 </a><br/>
             </td>
         </tr>
     </table>
-   
-</footer>-->
+</footer>
 </body>
 <!-- Основной блок Конец -->
 <!--JavaScript block-->
 <script type="text/javascript" src="./js/busket.js"></script>
+<script src="/js/inputmask.min.js"></script>
+<script src="./js/just-validate.min.js"></script>
+<script type="module" src="/js/main.js"></script>
 <!--JavaScript block End-->
 </html>

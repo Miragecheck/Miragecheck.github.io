@@ -1,0 +1,32 @@
+footer{
+    background-color: rgb(53, 53, 53);
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  
+ }
+ .footer-text{
+    font-size: 14px;
+    height: auto;
+    
+ }
+ .footer-div{
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 1%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .footer-table
+ {
+    border: 0;
+    width: 53%;
+    margin-left: 23%;
+ }
+ .footer-td
+ {
+    border: 0;
+ }
+
